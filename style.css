@@ -44,3 +44,41 @@ a {
   font-size: 2rem;
   color: black;
 }
+
+.barba-once {
+    transform: scale(0);
+  }
+  
+  .barba-once-active {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .barba-once-to {
+    transform: scale(1);
+  }
+  .barba-leave {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .barba-leave-active {
+    transition: all 0.3s ease;
+  }
+  
+  .barba-leave-to {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  .barba-enter {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+  .barba-enter-active {
+    transition: all 0.3s ease;
+  }
+  
+  .barba-enter-to {
+    opacity: 1;
+    transform: translateX(0);
+  }
